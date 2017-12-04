@@ -1,0 +1,49 @@
+<!-- Tammy Nguyen
+    Unit 9 Assigment -->
+
+
+
+<!doctype html>
+<html>
+
+<head>
+    <title> Unit 9 Assignment</title>
+
+</head>
+
+<body>
+    <p><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who want to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</p>
+
+
+
+    <script>
+        var wordItems = document.getElementsByTagName('strong');
+
+        for (i = 0; i < wordItems.length; i++) {
+
+            wordItems[i].onmouseover = function() {
+                this.style.color = "red"
+            }
+            wordItems[i].onmouseout = function() {
+                this.style.color = "black"
+            }
+        }
+
+
+        //  the addEventListener method
+
+
+        /*   
+   for (i=0; i<wordItems.length; i++){
+
+       wordItems[i].addEventListener("mouseover", function(){ this.style.color = "red"})
+       wordItems[i].addEventListener("mouseout", function(){ this.style.color = "black"})
+   };
+
+*/
+
+    </script>
+
+</body>
+
+</html>
